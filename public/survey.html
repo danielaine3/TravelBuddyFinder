@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Friend Finder-Survey</title>
+  <!--Link to reset CSS-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
   <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -12,263 +14,299 @@
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="text-center">Friend Finder</h1>
-			<hr>
-			<h2 class="text-center">Survey Questions</h2>
-			<br>	
+			<h1 class="text-center">Survey</h1>
+			<hr>	
 			<div class="text-center">
-    		<a href="/"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-home"></span></button></a>
+    		<a href="/"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-home">Home Page</span></button></a>
   		</div>
  		</div>
  	</div>
 
   <div class="panel-body">
-    <h2 class="text-center">About You</h2>
+    <p>Please use the 1-5 scale to answer the below.
+      <br>
+      1 = Strongly Disagree. 5 = Stronly Agree.</p>
+    <h1 class="text-center">About You</h1>
     <form role="form">
       <div class="form-group">
         <label for="name">Name (Required)</label>
         <input type="text" class="form-control" id="name">
-
         <label for="photo">Link to Photo Image (Required)</label>
         <input type="text" class="form-control" id="photo">
       </div>
 
+<!--       <div class="form-group">
+        <label for="exampleFormControlFile1">Upload Photo (Required)</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div> -->
+ 
       <div class="form-group">
         <h2>Question 1</h2>
         <label for="form-check form-check-inline">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question1" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question1"  value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question1" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question1" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 2</h2>
         <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question2"  value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question2" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question2" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question2" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question2" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 3</h2>
         <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question3" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question3" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question3" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question3" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question3" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 4</h2>
         <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question4" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question4" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question4" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question4" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question4" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 5</h2>
         <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question5" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question5" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question5" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question5" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question5" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 6</h2>
         <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question6" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question6" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question6" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question6" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question6" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 7</h2>
         <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question7" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question7" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question7" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question7" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question7" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 8</h2>
         <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question8" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question8" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question8" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question8" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question8" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 9</h2>
-        <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.
-        </label>
+        <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question9" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question9" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" nname="Question9" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question9" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question9" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
+      </div>
 
+      <div class="form-group">
         <h2>Question 10</h2>
-        <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.
-        </label>
+        <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+          <input class="form-check-input" type="radio" name="Question10" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <input class="form-check-input" type="radio" name="Question10" value="option2">
           <label class="form-check-label" for="inlineRadio2">2</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="form-check-input" type="radio" name="Question10" value="option3">
           <label class="form-check-label" for="inlineRadio3">3</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+          <input class="form-check-input" type="radio" name="Question10" value="option4">
           <label class="form-check-label" for="inlineRadio4">4</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-          <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+          <input class="form-check-input" type="radio" name="Question10" value="option5">
+          <label class="form-check-label" for="inlineRadio5">5</label>
         </div>
       </div>
       <button type="submit" class="btn btn-primary submit" id="add-btn">Submit</button>
     </form>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <p><a href="#">API Friends List</a> | <a href="https://github.com/danielaine3/FriendFinder">GitHub Repo</a></p>
+    </div>
+  </footer>
 </body>
 </html>
 
