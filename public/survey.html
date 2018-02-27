@@ -338,66 +338,49 @@
     .then(function(data) {
       // console.log(data);
 
-      friendSearch();
+      // friendSearch();
 
     });
 
+    compArray = [5,4,3,2,1,1,2,3,4,5];
 
-   function friendSearch() {
-      var currentURL = window.location.origin;
-      $.ajax({url:currentURL + "/api/friends", method:"GET"})
-      .then(function(friendsData) {
+    function diffCheck(arr1, arr2) {
+      if (arr1.length != arr2.length) {
+        throw "Arrays not same length!";
+      }
+      var totalDiff = 0;
 
-        //console.log(friendsData[0].scores)
-          console.log(newFriend.scores);
+      for (var i = 0; i < arr1.length; i++) {
+        totalDiff += Math.abs(arr1[i]-arr2[i]);
+      }
+      console.log(totalDiff);
+    };
 
-        //For each array item in the friendsData list
-        for(var i = 0; i < friendsData.length; i++) {
-          console.log(friendsData[i].name);          
-          console.log(friendsData[i].scores);
+diffCheck(newFriend.scores, compArray);
+
+    // function friendSearch() {
+    //   var currentURL = window.location.origin;
+    //   $.ajax({url:currentURL + "/api/friends", method:"GET"})
+    //   .then(function(friendsData) {
+
+    //     //console.log(friendsData[0].scores)
+    //       console.log(newFriend.scores);
+
+    //     //For each array item in the friendsData list
+    //     for(var i = 0; i < friendsData.length; i++) {
+    //       console.log(friendsData[i].name);          
+    //       console.log(friendsData[i].scores);
 
 
           //compare to newFriend scores array, subtracting each value
 
           //get the absolute value
             //return Math.abs(a - b);
-          }
+          // }
           //print the smallest value
          // console.log(difference);
         //}
-      })
+      // })
 
- }
-
-
-
-
-
-    // function friendSearch() {
-    //   var currentURL = window.location.origin;
-    //   $.ajax({url:currentURL + "/api/friends", method:GET})
-    //   .then(function(friendsData) {
-
-
-    //       console.log(friendsData)
-
-
-    //     //For each array item in the friendsData list
-    //     for(var i = 0; i < friendsData.length; i++) {
-    //       //compare to newFriend scores array, subtracting each value
-
-    //       //get the absolute value
-    //         return Math.abs(a - b);
-    //       }
-    //       //print the smallest value
-    //       console.log(difference);
-    //     //}
-    //   })
-
-    // }
-//  friendSearch();
-  });
-
-    
-
+ })    
 </script>
