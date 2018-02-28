@@ -315,7 +315,6 @@
     event.preventDefault();
 
     //ADD FORM VALIDATION
-
     var array = []
     array.push(parseInt($("input[type=radio][name=Question1]:checked").val()),
       parseInt($("input[type=radio][name=Question2]:checked").val()),
@@ -334,7 +333,9 @@
       scores: array
     };
 
-    $.post("/api/friends", newFriend)
+    var currentURL = window.location.origin;
+
+    $.post(currentURL + "/api/friends", newFriend)
     .then(function(data) {
       // console.log(data);
 
@@ -342,21 +343,20 @@
 
     });
 
-    compArray = [5,4,3,2,1,1,2,3,4,5];
+//     compArray = [5,4,3,2,1,1,2,3,4,5];
+//     function diffCheck(arr1, arr2) {
+//       if (arr1.length != arr2.length) {
+//         throw "Arrays not same length!";
+//       }
+//       var totalDiff = 0;
 
-    function diffCheck(arr1, arr2) {
-      if (arr1.length != arr2.length) {
-        throw "Arrays not same length!";
-      }
-      var totalDiff = 0;
+//       for (var i = 0; i < arr1.length; i++) {
+//         totalDiff += Math.abs(arr1[i]-arr2[i]);
+//       }
+//       console.log(totalDiff);
+//     };
 
-      for (var i = 0; i < arr1.length; i++) {
-        totalDiff += Math.abs(arr1[i]-arr2[i]);
-      }
-      console.log(totalDiff);
-    };
-
-diffCheck(newFriend.scores, compArray);
+// diffCheck(newFriend.scores, compArray);
 
     // function friendSearch() {
     //   var currentURL = window.location.origin;
