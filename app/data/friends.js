@@ -14,7 +14,22 @@ var friendsData = [
 		1,
 		5
 		]
+	},
+	{
+		"name": "dc",
+		"photo": "dc",
+		"scores": [
+		"3",
+		"3",
+		"3",
+		"3",
+		"3",
+		"3",
+		"3",
+		"3",
+		"3",
+		"3"
+		]
 	}
 ];	
-
 module.exports = friendsData;
