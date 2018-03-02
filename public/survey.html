@@ -8,7 +8,7 @@
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
   <!--chosen links-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
@@ -306,7 +306,7 @@
     </div>
   </footer>
     <!-- Modal -->
-  <div class="modal fade" id="resultsModal"  role="dialog" >
+  <div  class="modal" id="resultsModal" tabindex="-1" role="dialog" >
     <div class="modal-dialog" role="document">
       <!--Modal content-->
       <div class="modal-content">
@@ -318,7 +318,7 @@
         </div>
         <div class="modal-body">
           <h3 id= "matchName"></h3>
-          <img id= "matchImg" alt="Best Match Image">
+          <img id= "matchImg" src="" alt="Best Match Image">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -391,7 +391,11 @@
         alert ("Please complete all fields before submitting form.");
       }
       return false;
-   })  ;  
+    });  
   </script>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 var friendsData = [
 	{
 		"name": "Jane Doe",
-		"photo": "https://link.com",
+		"photo": "http://metro.co.uk/2018/02/26/new-mum-kylie-jenner-shouldnt-hide-body-baby-fear-body-shamed-7344188/",
 		"scores": [
 		5,
 		5,
@@ -17,7 +17,7 @@ var friendsData = [
 	},
 	{
 		"name": "dc",
-		"photo": "dc",
+		"photo": "https://hypebeast.com/2018/2/kylie-jenner-snapchat-stock-prices",
 		"scores": [
 		"3",
 		"3",
