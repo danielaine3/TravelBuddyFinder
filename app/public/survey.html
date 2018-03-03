@@ -40,8 +40,10 @@
       <p>Please use the 1-5 scale to answer the below.
       <br>
       1 = Strongly Disagree. 5 = Strongly Agree.</p>
+
+      <div class="questions"></div>
       <div class="form-group" id="question1">
-        <h2>Question 1</h2>
+        <p class="question">Question 1</p>
         <label for="form-check form-check-inline">I am adventurous and willing to try new things.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -67,7 +69,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 2</h2>
+         <p class="question">Question 2</p>
         <label for="exampleFormControlSelect1">I like to wake up early.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -93,7 +95,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 3</h2>
+         <p class="question">Question 3</p>
         <label for="exampleFormControlSelect1">I consider myself a tolerant person.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -119,7 +121,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 4</h2>
+         <p class="question">Question 4</p>
         <label for="exampleFormControlSelect1">I believe it's about more than just the destination.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -145,7 +147,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 5</h2>
+         <p class="question">Question 5</p>
         <label for="exampleFormControlSelect1">I like to have everything planned before I leave.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -171,7 +173,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 6</h2>
+         <p class="question">Question 6</p>
         <label for="exampleFormControlSelect1">I prefer to revisit places I've already been.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -197,7 +199,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 7</h2>
+         <p class="question">Question 7</p>
         <label for="exampleFormControlSelect1">I am willing to "rough it."</label>
         <br>
         <div class="form-check form-check-inline">
@@ -223,7 +225,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 8</h2>
+         <p class="question">Question 8</p>
         <label for="exampleFormControlSelect1">I like to take as many pictures as I can.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -249,7 +251,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 9</h2>
+         <p class="question">Question 9</p>
         <label for="exampleFormControlSelect1">I would rather eat where the locals do.</label>
         <br>
         <div class="form-check form-check-inline">
@@ -275,7 +277,7 @@
       </div>
 
       <div class="form-group">
-        <h2>Question 10</h2>
+         <p class="question">Question 10</p>
         <label for="exampleFormControlSelect1">There are large parts of the world I have no interest in traveling to. </label>
         <br>
         <div class="form-check form-check-inline">
@@ -332,6 +334,45 @@
   <footer> © Copyright 2018 Dani Carter</footer>
 
   <script type="text/javascript">   
+    // var questions = [
+    // {"label":"Question 1",
+    // "Question":"I am adventurous and willing to try new things."}, 
+    // {"label":"Question 2",
+    // "Question":"I like to wake up early."},
+    // {"label":"Question 3",
+    // "Question":"I consider myself a tolerant person."},
+    // {"label":"Question 4",
+    // "Question":"I believe it's about more than just the destination."}, 
+    // {"label":"Question 5",
+    // "Question":"I like to have everything planned before I leave."},
+    // {"label":"Question 6",
+    // "Question":"I prefer to revisit places I've already been."},
+    // {"label":"Question 7",
+    // "Question":'I am willing to "rough it."'}, 
+    // {"label":"Question 8",
+    // "Question":"I like to take as many pictures as I can."},
+    // {"label":"Question 9",
+    // "Question":"I would rather eat where the locals do."},
+    // {"label":"Question 10",
+    // "Question":"There are large parts of the world I have no interest in traveling to."}
+    // ]
+    // for (var i = 0; i < questions.length; i++) {
+    //   $('.questions').append(questions[i].label + '<br>' + questions[i].Question + '<br>');
+    //   var name = 'Question' + i;
+    //   for (var r =1; r < 6; r++) {
+    //     var label = $('<label>')
+    //       .addClass('form-check form-check-inline')
+    //       .html(r);
+    //     var input = $('<input type="radio">')
+    //       .addClass('form-check-input')
+    //       .attr('name', name)
+    //       .attr('value', r)
+    //       .prependTo(label);
+    //       if (r===3){input.prop('checked', true)};
+    //     label.appendTo($('.questions'));
+    //   }
+    //   $('.questions').append('<br>');
+    // }
     var config = {
         '.chosen-select': {},
         '.chosen-select-deselect': {
@@ -397,7 +438,6 @@
       return false;
     });  
   </script>
-
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

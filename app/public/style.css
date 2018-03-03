@@ -55,6 +55,10 @@ body {
 	border-color:#FFFFFF;
 }
 
+.question {
+	font-size: 40px;
+}
+
 .alert-info:hover {
 	font-size: 25px;
 	background-color: #ED8233;
