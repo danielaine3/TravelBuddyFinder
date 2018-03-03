@@ -1,6 +1,6 @@
 var friendsData = [
 	{
-		"name": "Kimn Kardashian",
+		"name": "Kim Kardashian",
 		"photo": "https://pbs.twimg.com/profile_images/941034987440128000/52bwGYtY_400x400.jpg",
 		"scores": [
 		3,
