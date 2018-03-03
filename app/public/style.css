@@ -12,6 +12,14 @@ h3 {
 	color: #FFFFFF;
 }
 
+h4 {
+	font-size:40px;
+}
+
+img {
+	width:470px;
+}
+
 body {
 	background-image: url("grey.png");
 	font-family: 'Pragati Narrow', sans-serif;
@@ -19,6 +27,9 @@ body {
 
 .jumbotron {
 	background-color: #5AC0C2;
+}
+
+#homejumbo {
 	margin-bottom: 200px;
 }
 
@@ -67,6 +78,7 @@ body {
 #apis {
 	align-content: center;
 }
+
 
 footer{
 	background-color: #5AC0C2;
