@@ -3,5 +3,23 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "path": "^0.12.7"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielaine3/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielaine3/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/danielaine3/FriendFinder#readme",
+  "description": ""
 }
