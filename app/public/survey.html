@@ -10,15 +10,17 @@
   <!-- Font Awesome CDN-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
- <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
   <!--chosen links-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+  <!--External CSS-->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="container">
+    <!--App jumbotron-->
 		<div class="jumbotron">
 			<h1 class="text-center">Travel Buddy Finder</h1>
 			<h1 class="text-center">Survey</h1>
@@ -28,6 +30,7 @@
   		</div>
  		</div>
  	</div>
+  <!--Start of survey-->
   <div class="panel-body">
     <h2 class="text-center">About You</h2>
     <form role="form">
@@ -37,10 +40,11 @@
         <label for="photo">Photo URL (Required)</label>
         <input type="text" class="form-control" id="photo">
       </div>
+      <!--Survey Instructions-->
       <p>Please use the 1-5 scale to answer the below.
       <br>
       1 = Strongly Disagree. 5 = Strongly Agree.</p>
-
+      <!--Survey questions-->
       <div class="questions"></div>
       <div class="form-group" id="question1">
         <p class="question">Question 1</p>
@@ -310,7 +314,8 @@
       <button class="btn alert-info"><a href="https://github.com/danielaine3/FriendFinder">GitHub Repo</a></button>
     </div>
   </footer>
-    <!-- Modal -->
+
+  <!-- Modal -->
   <div  class="modal" id="resultsModal" tabindex="-1" role="dialog" >
     <div class="modal-dialog" role="document">
       <!--Modal content-->
@@ -332,7 +337,7 @@
     </div>
   </div>
   <footer> © Copyright 2018 Dani Carter</footer>
-
+<!--BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER-->
   <script type="text/javascript">   
     // var questions = [
     // {"label":"Question 1",
@@ -373,6 +378,7 @@
     //   }
     //   $('.questions').append('<br>');
     // }
+
     var config = {
         '.chosen-select': {},
         '.chosen-select-deselect': {
@@ -392,9 +398,14 @@
         $(selector).chosen(config[selector]);
     }
 
+    // In this code below, we create the front end Javascript, which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/friends)... and then runs the associated code (found in apiRoutes.js).
+    // In this case, the associated code "saves" the data to the friends.js file
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
       var array = []
+      //Grab the values from the form and store the values in the array
       array.push(parseInt($("input[type=radio][name=Question1]:checked").val()),
         parseInt($("input[type=radio][name=Question2]:checked").val()),
         parseInt($("input[type=radio][name=Question3]:checked").val()),
@@ -405,8 +416,11 @@
         parseInt($("input[type=radio][name=Question8]:checked").val()),
         parseInt($("input[type=radio][name=Question9]:checked").val()),
         parseInt($("input[type=radio][name=Question10]:checked").val()));
+      
+      //Form validation
       function validateForm() {
         var isValid = true;
+        //If fields in form are left blank, isValid variable is false
         $('.form-control').each(function() {
           if ($(this).val() === '')
             isValid = false;
@@ -417,6 +431,7 @@
         })
         return isValid;
       }
+      //If all fields entered- store the data
       if (validateForm() == true) {
         var newFriend = {
           name: $("#name").val().trim(),
@@ -432,14 +447,18 @@
           //show the modal with best match
           $("#resultsModal").modal('toggle');
         });
+        //Else display message for use to complete all fields before submitting survey
       } else {
         alert ("Please complete all fields before submitting form.");
       }
       return false;
     });  
   </script>
+  <!--JQuery script-->
   <script src="https://code.jquery.com/jquery.js"></script>
+  <!--Popper script-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!--Bootstrap script-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
