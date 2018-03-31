@@ -29,3 +29,7 @@ This webapp requires the use of the following npms:
 * Express
 * Body-parser
 * Path
+
+## Run
+* Locally: node server.js
+* Online: travelbuddyfinder.herokuapp.com

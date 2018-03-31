@@ -7,12 +7,12 @@
 
   <!--Link to reset CSS-->
   <link rel="stylesheet" type="text/css" href="reset.css">
-  <!-- Latest compiled and minified CSS & JS -->
+  <!-- Latest compiled and minified CSS-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- Font Awesome CDN-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
-  <!--chosen links-->
+  <!--Chosen CSS & JS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
   <!--Google Fonts-->
@@ -132,6 +132,7 @@
       $('.questions').append('<br>');
     }
 
+    //Chosen jQuery code
     var config = {
         '.chosen-select': {},
         '.chosen-select-deselect': {
@@ -157,6 +158,8 @@
     // In this case, the associated code "saves" the data to the friends.js file
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
+
+      //Array to store responses
       var array = []
 
       //Grab the values from the form and store the values in the array
@@ -192,15 +195,19 @@
           photo: $("#photo").val().trim(),
           scores: array
         };
+
         //Grab URL of website
         var currentURL = window.location.origin;
+
         //AJAX post the data to the friends API
         $.post(currentURL + "/api/friends", newFriend, function(data) {
           $("#matchName").text(data.name);
           $("#matchImg").attr("src", data.photo);
+
           //show the modal with best match
           $("#resultsModal").modal('toggle');
         });
+
         //Else display message for use to complete all fields before submitting survey
       } else {
         alert ("Please complete all fields before submitting form.");
