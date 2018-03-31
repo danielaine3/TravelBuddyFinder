@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <title>Travel Buddy-Survey</title>
+
   <!--Link to reset CSS-->
   <link rel="stylesheet" type="text/css" href="reset.css">
   <!-- Latest compiled and minified CSS & JS -->
@@ -18,8 +20,10 @@
   <!--External CSS-->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 	<div class="container">
+
     <!--App jumbotron-->
 		<div class="jumbotron">
 			<h1 class="text-center">Travel Buddy Finder</h1>
@@ -30,6 +34,7 @@
   		</div>
  		</div>
  	</div>
+
   <!--Start of survey-->
   <div class="panel-body">
     <h2 class="text-center">About You</h2>
@@ -40,271 +45,14 @@
         <label for="photo">Photo URL (Required)</label>
         <input type="text" class="form-control" id="photo">
       </div>
+
       <!--Survey Instructions-->
       <p>Please use the 1-5 scale to answer the below.
       <br>
       1 = Strongly Disagree. 5 = Strongly Agree.</p>
-      <!--Survey questions-->
+      
+      <!--Survey questions will go here-->
       <div class="questions"></div>
-      <div class="form-group" id="question1">
-        <p class="question">Question 1</p>
-        <label for="form-check form-check-inline">I am adventurous and willing to try new things.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question1" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question1" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question1"  value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question1" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question1" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 2</p>
-        <label for="exampleFormControlSelect1">I like to wake up early.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question2"  value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question2" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question2" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question2" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question2" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 3</p>
-        <label for="exampleFormControlSelect1">I consider myself a tolerant person.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question3" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question3" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question3" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question3" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question3" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 4</p>
-        <label for="exampleFormControlSelect1">I believe it's about more than just the destination.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question4" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question4" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question4" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question4" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question4" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 5</p>
-        <label for="exampleFormControlSelect1">I like to have everything planned before I leave.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question5" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question5" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question5" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question5" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question5" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 6</p>
-        <label for="exampleFormControlSelect1">I prefer to revisit places I've already been.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question6" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question6" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question6" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question6" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question6" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 7</p>
-        <label for="exampleFormControlSelect1">I am willing to "rough it."</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question7" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question7" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question7" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question7" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question7" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 8</p>
-        <label for="exampleFormControlSelect1">I like to take as many pictures as I can.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question8" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question8" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question8" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question8" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question8" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 9</p>
-        <label for="exampleFormControlSelect1">I would rather eat where the locals do.</label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question9" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question9" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question9" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question9" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question9" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-         <p class="question">Question 10</p>
-        <label for="exampleFormControlSelect1">There are large parts of the world I have no interest in traveling to. </label>
-        <br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question10" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question10" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question10" value="3" checked>
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question10" value="4">
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Question10" value="5">
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-      </div>
       <button type="submit" class="btn btn-primary submit" id="add-btn">Submit</button>
     </form>
   </div>
@@ -337,47 +85,52 @@
     </div>
   </div>
   <footer> © Copyright 2018 Dani Carter</footer>
+
 <!--BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER-->
   <script type="text/javascript">   
-    // var questions = [
-    // {"label":"Question 1",
-    // "Question":"I am adventurous and willing to try new things."}, 
-    // {"label":"Question 2",
-    // "Question":"I like to wake up early."},
-    // {"label":"Question 3",
-    // "Question":"I consider myself a tolerant person."},
-    // {"label":"Question 4",
-    // "Question":"I believe it's about more than just the destination."}, 
-    // {"label":"Question 5",
-    // "Question":"I like to have everything planned before I leave."},
-    // {"label":"Question 6",
-    // "Question":"I prefer to revisit places I've already been."},
-    // {"label":"Question 7",
-    // "Question":'I am willing to "rough it."'}, 
-    // {"label":"Question 8",
-    // "Question":"I like to take as many pictures as I can."},
-    // {"label":"Question 9",
-    // "Question":"I would rather eat where the locals do."},
-    // {"label":"Question 10",
-    // "Question":"There are large parts of the world I have no interest in traveling to."}
-    // ]
-    // for (var i = 0; i < questions.length; i++) {
-    //   $('.questions').append(questions[i].label + '<br>' + questions[i].Question + '<br>');
-    //   var name = 'Question' + i;
-    //   for (var r =1; r < 6; r++) {
-    //     var label = $('<label>')
-    //       .addClass('form-check form-check-inline')
-    //       .html(r);
-    //     var input = $('<input type="radio">')
-    //       .addClass('form-check-input')
-    //       .attr('name', name)
-    //       .attr('value', r)
-    //       .prependTo(label);
-    //       if (r===3){input.prop('checked', true)};
-    //     label.appendTo($('.questions'));
-    //   }
-    //   $('.questions').append('<br>');
-    // }
+    var questions = [
+    {"label":"Question 1",
+    "Question":"I am adventurous and willing to try new things."}, 
+    {"label":"Question 2",
+    "Question":"I like to wake up early."},
+    {"label":"Question 3",
+    "Question":"I consider myself a tolerant person."},
+    {"label":"Question 4",
+    "Question":"I believe it's about more than just the destination."}, 
+    {"label":"Question 5",
+    "Question":"I like to have everything planned before I leave."},
+    {"label":"Question 6",
+    "Question":"I prefer to revisit places I've already been."},
+    {"label":"Question 7",
+    "Question":'I am willing to "rough it."'}, 
+    {"label":"Question 8",
+    "Question":"I like to take as many pictures as I can."},
+    {"label":"Question 9",
+    "Question":"I would rather eat where the locals do."},
+    {"label":"Question 10",
+    "Question":"There are large parts of the world I have no interest in traveling to."}
+    ];
+
+    //Dynamically create questions from above array
+    for (var i = 0; i < questions.length; i++) {
+      $('.questions').append(questions[i].label + '<br>' + questions[i].Question + '<br>');
+      var name = 'Question' + i;
+      for (var r = 1; r < 6; r++) {
+        var label = $('<label>')
+          .addClass('form-check form-check-inline')
+          .html(r);
+        var input = $('<input type="radio">')
+          .addClass('form-check-input')
+          .attr('name', name)
+          .attr('value', r)
+          .prependTo(label);
+        if (r===3){
+          input.prop('checked', true)
+        };
+        label.appendTo($('.questions'));
+      }
+      $('.questions').append('<br>');
+    }
 
     var config = {
         '.chosen-select': {},
@@ -405,8 +158,10 @@
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
       var array = []
+
       //Grab the values from the form and store the values in the array
-      array.push(parseInt($("input[type=radio][name=Question1]:checked").val()),
+      array.push(parseInt($("input[type=radio][name=Question0]:checked").val()),
+        parseInt($("input[type=radio][name=Question1]:checked").val()),
         parseInt($("input[type=radio][name=Question2]:checked").val()),
         parseInt($("input[type=radio][name=Question3]:checked").val()),
         parseInt($("input[type=radio][name=Question4]:checked").val()),
@@ -414,8 +169,7 @@
         parseInt($("input[type=radio][name=Question6]:checked").val()),
         parseInt($("input[type=radio][name=Question7]:checked").val()),
         parseInt($("input[type=radio][name=Question8]:checked").val()),
-        parseInt($("input[type=radio][name=Question9]:checked").val()),
-        parseInt($("input[type=radio][name=Question10]:checked").val()));
+        parseInt($("input[type=radio][name=Question9]:checked").val()));
       
       //Form validation
       function validateForm() {
